@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ruteador</title>
+  <meta name="description" content="Optimizador de recorridos en auto con salida y regreso en Olivos." />
+  <link rel="preconnect" href="https://unpkg.com" />
+  <link rel="preconnect" href="https://tile.openstreetmap.org" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="sidebar">
+      <header class="brand">
+        <div class="brand-icon">↻</div>
+        <div>
+          <p class="eyebrow">RECORRIDOS EN AUTO</p>
+          <h1>Ruteador</h1>
+        </div>
+      </header>
+
+      <div class="base-card">
+        <span class="base-dot"></span>
+        <div>
+          <small>Salida y regreso fijos</small>
+          <strong id="baseAddress">Juan Bautista Alberdi 1150, Olivos</strong>
+        </div>
+      </div>
+
+      <section class="input-section">
+        <div class="section-title-row">
+          <div>
+            <p class="eyebrow">PARADAS</p>
+            <h2>Direcciones a visitar</h2>
+          </div>
+          <span id="countBadge" class="badge">0</span>
+        </div>
+
+        <textarea id="addresses" spellcheck="false" placeholder="Una dirección por línea. Ejemplo:\nAv. Maipú 2500, Olivos\nParaná 3400, Martínez\nAv. del Libertador 13000, Martínez"></textarea>
+
+        <div class="input-actions">
+          <label class="secondary-btn file-btn">
+            Importar TXT/CSV
+            <input id="fileInput" type="file" accept=".txt,.csv,text/plain,text/csv" hidden />
+          </label>
+          <button id="clearBtn" class="ghost-btn" type="button">Limpiar</button>
+        </div>
+        <p class="hint">Podés pegar tantas líneas como necesites. Se eliminan duplicados automáticamente.</p>
+      </section>
+
+      <button id="optimizeBtn" class="primary-btn" type="button">
+        <span class="btn-label">Calcular ruta óptima</span>
+        <span class="spinner" aria-hidden="true"></span>
+      </button>
+
+      <div id="status" class="status" hidden></div>
+
+      <section id="summary" class="summary" hidden>
+        <div class="summary-grid">
+          <div><small>Distancia</small><strong id="distanceValue">—</strong></div>
+          <div><small>Tiempo aprox.</small><strong id="durationValue">—</strong></div>
+          <div><small>Paradas</small><strong id="stopsValue">—</strong></div>
+        </div>
+        <p id="methodText" class="method"></p>
+      </section>
+
+      <section id="googleMapsSection" class="google-maps-section" hidden>
+        <div class="section-title-row compact">
+          <h2>Abrir en Google Maps</h2>
+          <span id="googleMapsBadge" class="badge">0</span>
+        </div>
+        <p id="googleMapsHelp" class="hint"></p>
+        <div id="googleMapsLinks" class="google-maps-links"></div>
+      </section>
+
+      <section id="routeListSection" class="route-list-section" hidden>
+        <div class="section-title-row compact">
+          <h2>Orden de visita</h2>
+          <button id="copyBtn" class="ghost-btn small" type="button">Copiar</button>
+        </div>
+        <ol id="routeList" class="route-list"></ol>
+      </section>
+
+      <section id="issuesSection" class="issues" hidden>
+        <h2>Direcciones para revisar</h2>
+        <div id="issuesList"></div>
+      </section>
+    </section>
+
+    <section class="map-panel">
+      <div id="map" aria-label="Mapa de ruta"></div>
+      <div class="map-overlay top-left">
+        <div class="area-chip"><span></span> Área operativa</div>
+        <p>Belgrano Norte · Río · Av. Márquez · General Paz</p>
+      </div>
+      <div class="map-overlay bottom-right attribution-note">
+        Datos © OpenStreetMap · Ruteo OSRM
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="/app.js"></script>
+</body>
+</html>
