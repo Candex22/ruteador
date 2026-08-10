@@ -1,0 +1,298 @@
+{
+  "corridor-v2:juan bautista alberdi 1150, olivos, vicente lópez, buenos aires, argentina": {
+    "address": "Juan Bautista Alberdi 1150, Olivos, Vicente López, Buenos Aires, Argentina",
+    "displayName": "1150, Juan Bautista Alberdi, Olivos, Partido de Vicente López, Buenos Aires, B1636AAV, Argentina",
+    "lat": -34.5090626,
+    "lon": -58.4873815,
+    "type": "house",
+    "inside": true
+  },
+  "corridor-v2:tres sargentos 2473": {
+    "address": "Tres Sargentos 2473",
+    "displayName": "2473, Tres Sargentos, Martínez, Partido de San Isidro, Buenos Aires, B1640HQB, Argentina",
+    "lat": -34.4941597,
+    "lon": -58.4994438,
+    "type": "house",
+    "inside": true
+  },
+  "corridor-v2:pringles 2406": {
+    "address": "PRINGLES 2406",
+    "displayName": "2406, Pringles, Barrio Alemán, Martínez Oeste, Martínez, Partido de San Isidro, Buenos Aires, B1640, Argentina",
+    "lat": -34.500357,
+    "lon": -58.5147562,
+    "type": "house",
+    "inside": true
+  },
+  "corridor-v2:san lorenzo 1301": {
+    "address": "San Lorenzo 1301",
+    "displayName": "1301, San Lorenzo, La Lucila, Partido de Vicente López, Buenos Aires, B1636EMA, Argentina",
+    "lat": -34.5038478,
+    "lon": -58.4929158,
+    "type": "house",
+    "inside": true
+  },
+  "corridor-v2:corvalán 868": {
+    "address": "Corvalán 868",
+    "displayName": "868, Corvalán, Martínez Oeste, Martínez, Partido de San Isidro, Buenos Aires, B1640FVB, Argentina",
+    "lat": -34.4905947,
+    "lon": -58.5251217,
+    "type": "house",
+    "inside": true
+  },
+  "corridor-v2:aramburu 1568": {
+    "address": "Aramburu 1568",
+    "displayName": "1568, Aramburu, Barrio Alemán, Martínez Oeste, Martínez, Partido de San Isidro, Buenos Aires, B1640, Argentina",
+    "lat": -34.5037026,
+    "lon": -58.5152448,
+    "type": "house",
+    "inside": true
+  },
+  "corridor-v2:castelli 2626": {
+    "address": "Castelli 2626",
+    "displayName": "2626, Castelli, Martínez Oeste, Martínez, Partido de San Isidro, Buenos Aires, B1640, Argentina",
+    "lat": -34.5010529,
+    "lon": -58.5111719,
+    "type": "house",
+    "inside": true
+  },
+  "corridor-v2:santiago del estero 2935": {
+    "address": "SANTIAGO DEL ESTERO 2935",
+    "displayName": "2935, Santiago del Estero, Martínez Oeste, Martínez, Partido de San Isidro, Buenos Aires, B1640HFQ, Argentina",
+    "lat": -34.5053812,
+    "lon": -58.5307698,
+    "type": "house",
+    "inside": true
+  },
+  "corridor-v2:fray luis beltran 813": {
+    "address": "FRAY LUIS BELTRAN 813",
+    "displayName": "813, Fray Luis Beltrán, Martínez Oeste, Martínez, Partido de San Isidro, Buenos Aires, B1640BTG, Argentina",
+    "lat": -34.4884373,
+    "lon": -58.5215526,
+    "type": "house",
+    "inside": true
+  },
+  "corridor-v2:libertad 1010": {
+    "address": "Libertad 1010",
+    "displayName": "1010, Libertad, Vicente López, Partido de Vicente López, Buenos Aires, B1638ABD, Argentina",
+    "lat": -34.5198591,
+    "lon": -58.4799498,
+    "type": "house",
+    "inside": true
+  },
+  "corridor-v2:domingo repetto 557": {
+    "address": "Domingo Repetto 557",
+    "displayName": "557, Domingo S. Repetto, Martínez, Partido de San Isidro, Buenos Aires, 1640, Argentina",
+    "lat": -34.4829294,
+    "lon": -58.497235,
+    "type": "house",
+    "inside": true
+  },
+  "corridor-v2:fray justo santa maría de oro 3840": {
+    "address": "Fray Justo Santa María de Oro 3840",
+    "displayName": "3840, Fray Justo Santa María de Oro, Olivos, Partido de Vicente López, Buenos Aires, B1636, Argentina",
+    "lat": -34.5039265,
+    "lon": -58.5010296,
+    "type": "house",
+    "inside": true
+  },
+  "corridor-v2:monteverde 3160": {
+    "address": "Monteverde 3160",
+    "displayName": "3160, Luis Monteverde, Olivos, Partido de Vicente López, Buenos Aires, B1636EMA, Argentina",
+    "lat": -34.5080966,
+    "lon": -58.4932831,
+    "type": "house",
+    "inside": true
+  },
+  "corridor-v2:dr. mariano moreno 1779": {
+    "address": "Dr. Mariano Moreno 1779",
+    "displayName": "Doctor Mariano Moreno, Munro, Partido de Vicente López, Buenos Aires, B1605BOH, Argentina",
+    "lat": -34.5128569,
+    "lon": -58.5276422,
+    "type": "residential",
+    "inside": true
+  },
+  "corridor-v2:av. maipu 3122": {
+    "address": "AV. MAIPU 3122",
+    "displayName": "Cao Bar, 3122, Avenida Maipú, Olivos, Partido de Vicente López, Buenos Aires, 1636, Argentina",
+    "lat": -34.5072096,
+    "lon": -58.4930325,
+    "type": "bar",
+    "inside": true
+  },
+  "corridor-v2:borges 1725": {
+    "address": "BORGES 1725",
+    "displayName": "1725, Francisco Borges, Barrio Borges, Olivos, Partido de Vicente López, Buenos Aires, B1636, Argentina",
+    "lat": -34.508164,
+    "lon": -58.4947646,
+    "type": "house",
+    "inside": true
+  },
+  "corridor-v2:juan de garay 3141": {
+    "address": "Juan de Garay 3141",
+    "displayName": "3141, Juan de Garay, Olivos, Partido de Vicente López, Buenos Aires, B1636AAV, Argentina",
+    "lat": -34.5085548,
+    "lon": -58.4939676,
+    "type": "house",
+    "inside": true
+  },
+  "corridor-v2:fray justo santa maria de oro 3840": {
+    "address": "FRAY JUSTO SANTA MARIA DE ORO 3840",
+    "displayName": "3840, Fray Justo Santa María de Oro, Olivos, Partido de Vicente López, Buenos Aires, B1636, Argentina",
+    "lat": -34.5039265,
+    "lon": -58.5010296,
+    "type": "house",
+    "inside": true
+  },
+  "corridor-v2:dr. mariano moreno 1779, olivos": {
+    "address": "Dr. Mariano Moreno 1779, olivos",
+    "displayName": "Mariano Moreno, Olivos, Partido de Vicente López, Buenos Aires, B1640IGO, Argentina",
+    "lat": -34.4989714,
+    "lon": -58.4971781,
+    "type": "residential",
+    "inside": true
+  },
+  "corridor-v2:maipu 3970": {
+    "address": "MAIPU 3970",
+    "displayName": "3970, Avenida Maipú, Olivos, Partido de Vicente López, Buenos Aires, B1636EMA, Argentina",
+    "lat": -34.4999588,
+    "lon": -58.4967677,
+    "type": "house",
+    "inside": true
+  },
+  "boundary-red-v3:juan bautista alberdi 1150, olivos, vicente lópez, buenos aires, argentina": {
+    "address": "Juan Bautista Alberdi 1150, Olivos, Vicente López, Buenos Aires, Argentina",
+    "displayName": "1150, Juan Bautista Alberdi, Olivos, Partido de Vicente López, Buenos Aires, B1636AAV, Argentina",
+    "lat": -34.5090626,
+    "lon": -58.4873815,
+    "type": "house",
+    "inside": true
+  },
+  "boundary-red-v3:tres sargentos 2473, martinez": {
+    "address": "Tres Sargentos 2473, martinez",
+    "displayName": "2473, Tres Sargentos, Martínez, Partido de San Isidro, Buenos Aires, B1640HQB, Argentina",
+    "lat": -34.4941597,
+    "lon": -58.4994438,
+    "type": "house",
+    "inside": true
+  },
+  "boundary-red-v3:pringles 2406, martinez": {
+    "address": "PRINGLES 2406, martinez",
+    "displayName": "2406, Pringles, Barrio Alemán, Martínez Oeste, Martínez, Partido de San Isidro, Buenos Aires, B1640, Argentina",
+    "lat": -34.500357,
+    "lon": -58.5147562,
+    "type": "house",
+    "inside": true
+  },
+  "boundary-red-v3:san lorenzo 1301, martinez": {
+    "address": "San Lorenzo 1301, martinez",
+    "displayName": "1301, San Lorenzo, Martínez Oeste, Martínez, Partido de San Isidro, Buenos Aires, B1640BNP, Argentina",
+    "lat": -34.487255,
+    "lon": -58.510027,
+    "type": "house",
+    "inside": true
+  },
+  "boundary-red-v3:corvalán 868, martinez": {
+    "address": "Corvalán 868, martinez",
+    "displayName": "868, Corvalán, Martínez Oeste, Martínez, Partido de San Isidro, Buenos Aires, B1640FVB, Argentina",
+    "lat": -34.4905947,
+    "lon": -58.5251217,
+    "type": "house",
+    "inside": true
+  },
+  "boundary-red-v3:aramburu 1568, martinez": {
+    "address": "Aramburu 1568, martinez",
+    "displayName": "1568, Aramburu, Barrio Alemán, Martínez Oeste, Martínez, Partido de San Isidro, Buenos Aires, B1640, Argentina",
+    "lat": -34.5037026,
+    "lon": -58.5152448,
+    "type": "house",
+    "inside": true
+  },
+  "boundary-red-v3:castelli 2626, martinez": {
+    "address": "Castelli 2626, martinez",
+    "displayName": "2626, Castelli, Martínez Oeste, Martínez, Partido de San Isidro, Buenos Aires, B1640, Argentina",
+    "lat": -34.5010529,
+    "lon": -58.5111719,
+    "type": "house",
+    "inside": true
+  },
+  "boundary-red-v3:santiago del estero 2935, martinez": {
+    "address": "SANTIAGO DEL ESTERO 2935, martinez",
+    "displayName": "2935, Santiago del Estero, Martínez Oeste, Martínez, Partido de San Isidro, Buenos Aires, B1640HFQ, Argentina",
+    "lat": -34.5053812,
+    "lon": -58.5307698,
+    "type": "house",
+    "inside": true
+  },
+  "boundary-red-v3:fray luis beltran 813, martinez": {
+    "address": "FRAY LUIS BELTRAN 813, martinez",
+    "displayName": "813, Fray Luis Beltrán, Martínez Oeste, Martínez, Partido de San Isidro, Buenos Aires, B1640BTG, Argentina",
+    "lat": -34.4884373,
+    "lon": -58.5215526,
+    "type": "house",
+    "inside": true
+  },
+  "boundary-red-v3:libertad 1010, martinez": {
+    "address": "Libertad 1010, martinez",
+    "displayName": "1010, Libertad, Martínez Oeste, Martínez, Partido de San Isidro, Buenos Aires, B1640BTG, Argentina",
+    "lat": -34.4894169,
+    "lon": -58.5162587,
+    "type": "house",
+    "inside": true
+  },
+  "boundary-red-v3:domingo repetto 557, martinez": {
+    "address": "Domingo Repetto 557, martinez",
+    "displayName": "557, Domingo S. Repetto, Martínez, Partido de San Isidro, Buenos Aires, 1640, Argentina",
+    "lat": -34.4829294,
+    "lon": -58.497235,
+    "type": "house",
+    "inside": true
+  },
+  "boundary-red-v3:vergara 2527": {
+    "address": "Vergara 2527",
+    "displayName": "2527, Gobernador Valentín Vergara, Florida, Partido de Vicente López, Buenos Aires, B1602BXI, Argentina",
+    "lat": -34.5309002,
+    "lon": -58.4957174,
+    "type": "house",
+    "inside": true
+  },
+  "boundary-red-v3:buenos aires 3793": {
+    "address": "BUENOS AIRES 3793",
+    "displayName": "3793, Buenos Aires, Munro, Partido de Vicente López, Buenos Aires, B1605DST, Argentina",
+    "lat": -34.5299325,
+    "lon": -58.5119857,
+    "type": "house",
+    "inside": true
+  },
+  "boundary-red-v3:fray justo sarmiento 1921": {
+    "address": "FRAY JUSTO SARMIENTO 1921",
+    "displayName": "1921, Fray Justo Sarmiento, Florida, Partido de Vicente López, Buenos Aires, B1602BXI, Argentina",
+    "lat": -34.5256678,
+    "lon": -58.4986616,
+    "type": "house",
+    "inside": true
+  },
+  "boundary-red-v3:malaver 1702": {
+    "address": "MALAVER 1702",
+    "displayName": "1702, Antonio Malaver, Florida, Partido de Vicente López, Buenos Aires, B1638ABG, Argentina",
+    "lat": -34.519933,
+    "lon": -58.4895122,
+    "type": "house",
+    "inside": true
+  },
+  "boundary-red-v3:domingo faustino sarmiento 1915": {
+    "address": "Domingo Faustino Sarmiento 1915",
+    "displayName": "1915, Domingo Faustino Sarmiento, Florida, Partido de Vicente López, Buenos Aires, B1638ABG, Argentina",
+    "lat": -34.5202072,
+    "lon": -58.4875543,
+    "type": "house",
+    "inside": true
+  },
+  "boundary-red-v3:juan de garay 1950": {
+    "address": "JUAN DE GARAY 1950",
+    "displayName": "1950, Juan de Garay, Florida, Partido de Vicente López, Buenos Aires, B1638ABG, Argentina",
+    "lat": -34.5191839,
+    "lon": -58.4874187,
+    "type": "house",
+    "inside": true
+  }
+}

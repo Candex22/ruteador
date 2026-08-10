@@ -12,41 +12,53 @@ const CACHE_FILE = path.join(DATA_DIR, 'geocode-cache.json');
 // Se puede apuntar a instancias propias para uso intensivo.
 const NOMINATIM_URL = process.env.NOMINATIM_URL || 'https://nominatim.openstreetmap.org';
 const OSRM_URL = process.env.OSRM_URL || 'https://router.project-osrm.org';
-const USER_AGENT = process.env.GEOCODER_USER_AGENT || 'RuteadorVicenteLopez/1.1 (uso local)';
-const GEOCODE_CACHE_VERSION = 'corridor-v2';
+const USER_AGENT = process.env.GEOCODER_USER_AGENT || 'RuteadorVicenteLopez/1.3 (uso local)';
+const GEOCODE_CACHE_VERSION = 'boundary-red-v3';
 
 const START_ADDRESS = 'Juan Bautista Alberdi 1150, Olivos, Vicente López, Buenos Aires, Argentina';
 
-// Polígono operativo aproximado pedido por el usuario:
-// oeste: traza Belgrano Norte; este: Río de la Plata;
-// norte: Av. Márquez / Hipódromo de San Isidro; sur: Av. General Paz.
-// IMPORTANTE: el área cruza el límite municipal e incluye Martínez y parte de San Isidro.
-// Está pensado para filtrar domicilios y acotar el mapa, no como límite catastral.
+// Área operativa corregida a partir del trazado marcado por el usuario (v1.3):
+// - límite noroeste/norte: Av. Márquez y sector Hipódromo hasta la traza indicada;
+// - límite oeste/suroeste: vías del Ferrocarril Belgrano Norte;
+// - límite sur: Av. General Paz;
+// - límite este: costa del Río de la Plata.
+//
+// A diferencia de las versiones anteriores, este polígono NO usa la diagonal
+// Lomas de San Isidro -> Florida ni se extiende mar adentro. Los puntos del
+// lado terrestre fueron ajustados sobre la referencia roja enviada por el usuario.
 const SERVICE_POLYGON = [
-  [-58.5079, -34.5517], // General Paz / corredor Belgrano Norte (sur-oeste)
-  [-58.5168, -34.5352],
-  [-58.5258, -34.5208],
-  [-58.5354, -34.5067],
-  [-58.5448, -34.4927],
-  [-58.5508, -34.4808], // Av. Márquez / corredor Belgrano Norte (noroeste)
-  [-58.5162, -34.4746], // Av. Márquez hacia el hipódromo
-  [-58.4865, -34.4705],
-  [-58.4667, -34.4739], // ribera, sector norte
-  [-58.4556, -34.4930],
-  [-58.4498, -34.5144],
-  [-58.4542, -34.5350], // ribera, sector sur
-  [-58.4746, -34.5449],
-  [-58.4925, -34.5498],
-  [-58.5079, -34.5517]
+  [-58.51538, -34.47309], // extremo norte, junto al sector Acassuso / Hipódromo
+  [-58.55586, -34.49578], // Av. Márquez hacia Boulogne
+  [-58.56810, -34.50775], // enlace con la traza del Belgrano Norte
+  [-58.54287, -34.52811], // Belgrano Norte: Villa Adelina / Munro
+  [-58.49297, -34.54878], // Belgrano Norte / llegada a General Paz
+  [-58.47460, -34.54490], // General Paz hacia el este
+  [-58.45418, -34.53494], // General Paz / sector ribereño
+
+  // Costa del Río de la Plata, de sur a norte.
+  [-58.45889, -34.53059],
+  [-58.46416, -34.52593],
+  [-58.46868, -34.52204],
+  [-58.47244, -34.51816],
+  [-58.47583, -34.51350],
+  [-58.47847, -34.50728],
+  [-58.47998, -34.50106],
+  [-58.48035, -34.49485],
+  [-58.48092, -34.48863],
+  [-58.48205, -34.48241],
+  [-58.48431, -34.47698],
+  [-58.48676, -34.47231],
+
+  // Cierre del límite norte hasta el extremo marcado en rojo.
+  [-58.51538, -34.47309]
 ];
 
 const MAP_BOUNDS = {
-  // Un pequeño margen exterior ayuda a Nominatim a encontrar correctamente
-  // domicilios cercanos a Márquez, Martínez y la traza ferroviaria.
-  south: -34.562,
-  west: -58.565,
-  north: -34.458,
-  east: -58.440
+  // Margen pequeño alrededor del área real. También se usa como viewbox del geocodificador.
+  south: -34.554,
+  west: -58.574,
+  north: -34.468,
+  east: -58.449
 };
 
 fs.mkdirSync(DATA_DIR, { recursive: true });

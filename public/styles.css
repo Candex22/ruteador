@@ -110,7 +110,7 @@ textarea:focus { border-color: #9bb8ff; box-shadow: 0 0 0 4px #edf3ff; }
 .top-left { top: 18px; left: 18px; padding: 10px 12px; border-radius: 12px; }
 .top-left p { margin: 4px 0 0; font-size: 10.5px; color: var(--muted); }
 .area-chip { display: flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 800; }
-.area-chip span { width: 9px; height: 9px; border-radius: 50%; background: var(--accent); }
+.area-chip span { width: 9px; height: 9px; border-radius: 50%; background: #e61b1b; }
 .bottom-right { right: 12px; bottom: 12px; padding: 6px 8px; border-radius: 8px; font-size: 9px; color: var(--muted); box-shadow: none; }
 .leaflet-control-attribution { display: none; }
 .route-marker { background: transparent; border: 0; }

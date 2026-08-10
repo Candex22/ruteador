@@ -1,4 +1,4 @@
-# Ruteador
+# Ruteador Vicente López · Martínez
 
 Aplicación web local para cargar una cantidad abierta de domicilios, ordenar un recorrido eficiente en auto y regresar al punto fijo:
 
@@ -6,14 +6,14 @@ Aplicación web local para cargar una cantidad abierta de domicilios, ordenar un
 
 ## Área operativa
 
-El mapa y la validación de domicilios están acotados por un polígono aproximado basado en:
+El mapa y la validación de domicilios están acotados por el área operativa corregida, basada en:
 
 - vías del Ferrocarril Belgrano Norte (oeste),
 - Río de la Plata (este),
 - Av. Márquez / sector Hipódromo de San Isidro (norte),
 - Av. General Paz (sur).
 
-El corredor **incluye Martínez y el sector al sur de Av. Márquez**, aunque administrativamente parte del área pertenezca al partido de San Isidro. El polígono se puede afinar fácilmente editando `SERVICE_POLYGON` en `server.js`.
+El corredor **incluye Martínez y el sector al sur de Av. Márquez**, aunque administrativamente parte del área pertenezca al partido de San Isidro. El borde visible del mapa se muestra en rojo y la validación de domicilios utiliza exactamente ese mismo polígono.
 
 ## Ejecutar
 
@@ -56,4 +56,4 @@ También podés definir `PORT`, `HOST` y `GEOCODER_USER_AGENT`.
 
 ## Precisión del límite
 
-El límite dibujado es intencionalmente operativo/aproximado. Si necesitás que la línea siga exactamente cada tramo de vía, costa y avenida, reemplazá los puntos de `SERVICE_POLYGON` por coordenadas verificadas o por una geometría GeoJSON propia.
+En la versión 1.3 el límite fue corregido siguiendo la referencia marcada en rojo por el usuario: se eliminó la diagonal incorrecta que atravesaba Lomas de San Isidro/Martínez Oeste, se llevó el borde occidental hacia la traza indicada del Belgrano Norte y se ajustó el borde oriental para acompañar la costa en vez de extenderse dentro del Río de la Plata.

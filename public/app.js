@@ -86,11 +86,10 @@ function initMap() {
 
   const latLngs = config.polygon.map(([lon, lat]) => [lat, lon]);
   serviceLayer = L.polygon(latLngs, {
-    color: '#165dff',
-    weight: 2,
-    fillColor: '#165dff',
-    fillOpacity: 0.055,
-    dashArray: '7 7'
+    color: '#e61b1b',
+    weight: 3,
+    fillColor: '#e61b1b',
+    fillOpacity: 0.035
   }).addTo(map);
 
   // Máscara visual exterior, para que la zona de trabajo quede clara.
